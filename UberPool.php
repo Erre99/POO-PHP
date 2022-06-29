@@ -8,8 +8,12 @@ class UberPool extends Car{
 
     public function __construct($license, $driver, $brand, $model){
         parent::__construct($license, $driver);
-        $this->license = $license;
-        $this->driver = $driver;
+        $this->brand = $brand;
+        $this->model = $model;
+    }
+
+    public function printDataCar(){
+        echo "Licencia: $this->license Driver:" .$this->driver->driver. " Brand: $this->brand Model: $this->model <br />";
     }
 }
 
